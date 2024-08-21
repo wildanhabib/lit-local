@@ -4,15 +4,21 @@
 <body>
 <trans-unit id="s6dfd1a978586d8de">
   <source>Welcome, <x id="0" equiv-text="${this.name}"/>!</source>
+  <target>Selamat Datang, <x id="0" equiv-text="${this.name}"/>!</target>
 </trans-unit>
 <trans-unit id="sacac6b633604cb76">
   <source>I hope you are in good condition</source>
+  <target>Saya harap Anda dalam kondisi baik</target>
 </trans-unit>
 <trans-unit id="h654ecffe143a9e19">
   <source>
           Please visit <x id="0" equiv-text="&lt;a href=&quot;https://www.dicoding.com/&quot; target=&quot;_blank&quot;&gt;"/>this site<x id="1" equiv-text="&lt;/a&gt;"/> to be
           professional programmer
         </source>
+  <target>
+          Monggo rawuh dateng <x id="0" equiv-text="&lt;a href=&quot;https://www.dicoding.com/&quot; target=&quot;_blank&quot;&gt;"/>situs niki<x id="1" equiv-text="&lt;/a&gt;"/> dados
+          professional programmer
+        </target>
 </trans-unit>
 </body>
 </file>
