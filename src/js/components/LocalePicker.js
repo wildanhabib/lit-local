@@ -1,10 +1,12 @@
 import { LitElement, html } from 'lit';
 import { allLocales } from '../../generated/locale-codes';
 import { getLocale, localeNames, setLocaleFromUrl } from '../localization.js';
+import { updateWhenLocaleChanges } from '@lit/localize';
 
 class LocalePicker extends LitElement {
   constructor() {
     super();
+    updateWhenLocaleChanges(this);
   }
 
   render() {

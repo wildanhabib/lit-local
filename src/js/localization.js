@@ -5,9 +5,19 @@ export const { getLocale, setLocale } = configureLocalization({
   sourceLocale,
   targetLocales,
   async loadLocale(locale) {
-    return;
+    switch (locale) {
+        case 'es':
+          return import('../generated/locales/es.js');
+        case 'id':
+          return import('../generated/locales/id.js');
+        default:
+          return ;
+      }
+    // return;
 
-    import(`../../generated/locales/${locale}.js`);
+    // import(`../../generated/locales/${locale}.js`);
+    // import(`../generated/locales/id.js`);
+    // import(`../generated/locales/es.js`);
   },
 });
 
@@ -22,5 +32,6 @@ export const setLocaleFromUrl = async () => {
 
 export const localeNames = {
   en: 'Inggris',
+  es: 'Espanol',
   id: 'Indonesia',
 };

@@ -1,5 +1,7 @@
 import { html, LitElement } from 'lit';
 import { msg, str } from '@lit/localize';
+import { updateWhenLocaleChanges } from '@lit/localize';
+
 
 class MyElement extends LitElement {
   static properties = {
@@ -9,6 +11,7 @@ class MyElement extends LitElement {
   constructor() {
     super();
     updateWhenLocaleChanges(this);
+
     this.name = 'John Doe';
   }
 
