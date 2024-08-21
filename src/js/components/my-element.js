@@ -8,6 +8,7 @@ class MyElement extends LitElement {
 
   constructor() {
     super();
+    updateWhenLocaleChanges(this);
     this.name = 'John Doe';
   }
 
